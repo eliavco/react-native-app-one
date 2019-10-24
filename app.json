@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "This is a simple and functional calculator made for everyone with <3 By Eliav Cohen!",
+    "githubUrl": "https://github.com/eliavco/react-native-app-one.git"
   }
 }
