@@ -9,6 +9,9 @@
       "android",
       "web"
     ],
+    "android": {
+      "package": "com.eliavco.escalculator"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -24,7 +27,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eliavco.escalculator"
     },
     "description": "This is a simple and functional calculator made for everyone with <3 By Eliav Cohen!",
     "githubUrl": "https://github.com/eliavco/react-native-app-one.git"
