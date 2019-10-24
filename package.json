@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "run": "cd C:/Users/eliav_1iz7/Desktop/ReactNative/appOne; cd env-12.10; ./Scripts/activate; cd ..; npm start"
   },
   "jest": {
     "preset": "jest-expo"

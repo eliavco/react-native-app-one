@@ -17,13 +17,14 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <ScrollView
         style={styles.container}
-        contentContainerStyle={styles.contentContainer}>
+        contentContainerStyle={styles.contentContainer}
+      >
         <View style={styles.welcomeContainer}>
           <Image
             source={
               __DEV__
-                ? require('../assets/images/robot-dev.png')
-                : require('../assets/images/robot-prod.png')
+                ? require("../assets/images/robot-dev.png")
+                : require("../assets/images/robot-prod.png")
             }
             style={styles.welcomeImage}
           />
@@ -32,36 +33,45 @@ export default function HomeScreen() {
         <View style={styles.getStartedContainer}>
           <DevelopmentModeNotice />
 
-          <Text style={styles.getStartedText}>Get started by opening</Text>
+          <Text style={styles.getStartedText}>This is another app made with {'<3'} by</Text>
 
           <View
-            style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-            <MonoText>screens/HomeScreen.js</MonoText>
+            style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
+          >
+            <MonoText>ELCO Apps</MonoText>
           </View>
 
           <Text style={styles.getStartedText}>
-            Change this text and your app will automatically reload.
+            Go around the app and experience it
           </Text>
         </View>
 
         <View style={styles.helpContainer}>
           <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>
-              Help, it didn’t automatically reload!
+              Learn more about React Native!
             </Text>
           </TouchableOpacity>
+        </View>
+
+        <View>
+          <Image
+            source={require("../assets/images/Me.jpg")}
+            style={styles.imageMe}
+          />
         </View>
       </ScrollView>
 
       <View style={styles.tabBarInfoContainer}>
         <Text style={styles.tabBarInfoText}>
-          This is a tab bar. You can edit it in:
+          Eliav Cohen's Calculator
         </Text>
 
         <View
-          style={[styles.codeHighlightContainer, styles.navigationFilename]}>
+          style={[styles.codeHighlightContainer, styles.navigationFilename]}
+        >
           <MonoText style={styles.codeHighlightText}>
-            navigation/MainTabNavigator.js
+            menu
           </MonoText>
         </View>
       </View>
@@ -90,7 +100,7 @@ function DevelopmentModeNotice() {
   } else {
     return (
       <Text style={styles.developmentModeText}>
-        You are not in development mode: your app will run at full speed.
+        Your app will run at full speed.
       </Text>
     );
   }
@@ -98,13 +108,13 @@ function DevelopmentModeNotice() {
 
 function handleLearnMorePress() {
   WebBrowser.openBrowserAsync(
-    'https://docs.expo.io/versions/latest/workflow/development-mode/'
+    'https://docs.expo.io/'
   );
 }
 
 function handleHelpPress() {
   WebBrowser.openBrowserAsync(
-    'https://docs.expo.io/versions/latest/workflow/up-and-running/#cant-see-your-changes'
+    'https://docs.expo.io/'
   );
 }
 
@@ -194,5 +204,9 @@ const styles = StyleSheet.create({
   helpLinkText: {
     fontSize: 14,
     color: '#2e78b7',
+  },
+  imageMe: {
+    width: '100%',
+    height: 380,
   },
 });

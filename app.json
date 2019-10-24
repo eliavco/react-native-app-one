@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Eliav Cohen",
-    "slug": "appOne",
+    "name": "Eliav's Calculator",
+    "slug": "ESCalculator",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [

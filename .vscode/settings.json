@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/__tests__": true,
+        "**/.expo": true,
+        "**/.expo-shared": true,
+        "**/.gitignore": true,
+        "**/.vscode": true,
+        "**/.watchmanconfig": true,
+        "**/babel.config.js": true,
+        "**/env-**": true,
+        "**/node**": true,
+        "**/package-lock.json": true,
+        "**/yarn-error.log": true
+    }
+}
