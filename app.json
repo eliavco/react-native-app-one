@@ -27,6 +27,7 @@
       "**/*"
     ],
     "ios": {
+      "icon": "./assets/images/icon-white.png",
       "supportsTablet": true,
       "bundleIdentifier": "com.eliavco.escalculator"
     },
